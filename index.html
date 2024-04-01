@@ -9,7 +9,7 @@
         .left-align {
             float: left;
             width: 15%;
-             margin-top:5vw;
+            margin-top:1vw;
 
 
         }
@@ -19,30 +19,44 @@
 
         .right-align {
             float: left;
-            width: 30%;
-            margin-top:2vw;
+            width: 45%;
+            margin-left: 2vw;
+            margin-top:1vw;
         }
-    
+        .right-align p{
+            margin-bottom:1vw;
+        }
+        .callout {
+    position: absolute; /* Use absolute positioning for overlapping */
+    top: 0; /* Adjust the top position as needed */
+    right: 0; /* Adjust the right position as needed */
+    margin-right: 50vw; /* Adjust margin-right as needed */
+    margin-top: 15vw; /* Adjust margin-top as needed */
+    color:#595959;
+    font-weight:bold;
+    font-size:1.5em;
+    line-height:5px;
+}
         .clearfix {
             clear: both;
         }
         body {
-            font-family:'Quicksand';font-size: 22px;
             color:#0C5449;
             margin-left:10vw;
         }
+
         ::placeholder {
             color: #0C5449; /* Placeholder text color */
             font-style: bold; /* Placeholder text style */
             font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            font-size:25px;
+            font-size:30px;
             text-align: center;
         }
 
         input[type="text"],
         input[type="email"]{
-            width: 85%;
-            height:3vw;
+            width: 100%;
+            height:4vw;
             padding: 10px;
             margin: 1px 5px;
             border: 1px solid #ccc;
@@ -65,21 +79,21 @@
               cursor: pointer;
               background-color: #0C5449;
               font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-              margin-bottom:4vw;
+
+              margin-left:30vw;
         }
 
         textarea {
             width: 100%;
-            height:10vw;
+            height:12vw;
             padding: 10px;
             margin: 5px 5px;
             border: 1px solid #ccc;
             border-radius: 10px;
             box-sizing: border-box; 
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            font-size:25px;
+            font-size:30px;
             color: #0C5449; 
-            margin-top: 3vw;
         }
         textarea::placeholder {
            padding-top: 3vw;
@@ -98,17 +112,23 @@
         <label for="email"></label>
         <input type="email" id="email" name="email" placeholder="Email*"><br>
     </div>
-
+       
     <div class="right-align">
-        <img src="ContactUsBubble2.png" style="height:8vw;width:35vw;margin-left: 5vw;top:0vw;position:absolute;">
+        <img src="ContactUsBubble2.png" style="height:4vw;width:15vw;margin-left: 25vw;top:0vw;position:absolute;">
             <label for="message"></label><br>
             <textarea id="message" name="message" placeholder="[Place text here*]"></textarea><br><br>
-            <input type="submit" value="Send">
+        </p> <input type="submit" value="Send">
     </div>
-    <img src="LCD3.png" style="height:25vw;width:48vw;float:right;margin-top:8vw;">
-    </span>
+    <div class="clearfix"></div>
+    <div class="callout">
+    <p><em>-Are our tools helpful?</em></p>
+    <p><em>-Any tips on improvements?</em>
+    <p><em>-Want to contribute?
+    </p></em>
+    <span style="font-size:1.2em;"><u><em><p>Please Let Us Know!
+    </p></u></em></span>
+</div>
     </form>
-    </span>
-    <img src="OurMission2.png" style="position:absolute;height:17vw;width:40vw;bottom:0vw;right:50vw;">
+    <img src="OurMission3.png" style="position:absolute;height:15vw;width:40vw;bottom:0vw;right:35vw;">
 </body>
 </html>
